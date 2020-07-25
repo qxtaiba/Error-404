@@ -1,9 +1,7 @@
 import webbrowser
 
 try:
-    # some code that will raise an exception
-    raise ValueError('invalid syntax')
-
-except Exception as e:
+    raise ValueError('invalid syntax')xw
+except Exception as exception:
  
-    webbrowser.open_new("http://stackoverflow.com/search?q=+"+ type(e).__name__ + " "+ e.message)
+    webbrowser.open_new("http://stackoverflow.com/search?q=+"+ type(exception).__name__ + " "+ exception.message)
